@@ -35,33 +35,34 @@ else if (friend_sex =='f' )
 int age;
 cout << "enter the age of the person\n";
 cin >> age;
-
+cout << "I hear you just had a birthday and you are " << age << " years old.\n";
+	
 if(age <= 0 || age >= 110)
 	{
 		simple_error("you're kidding\n");
 	}
 
-switch(age)
-	{
-		case 1 ... 11:	cout << "I hear you just had a birthday and you are " << age << " years old.\n Next year you will be "<< age+1<<"\n";break;
-		case 12 ... 16:	cout << "I hear you just had a birthday and you are " << age << " years old.\n";break;
-		case 17:		cout << "I hear you just had a birthday and you are " << age << " years old.\n Next year you will be able to vote.\n";break;
-		case 18 ... 70:	cout << "I hear you just had a birthday and you are " << age << " years old.\n";break;
-		case 71 ... 109:cout << "I hear you just had a birthday and you are " << age << " years old.\n I hope you are enjoying retirement\n";break;
-	}	
-
-//if(age <12)
-//	{		
-//		cout <<"Next year you will be "<< age+1<<"\n";
+//switch(age)
+//	{
+//		case 1 ... 11:	cout << "I hear you just had a birthday and you are " << age << " years old.\n Next year you will be "<< age+1<<"\n";break;
+//		case 12 ... 16:	cout << "I hear you just had a birthday and you are " << age << " years old.\n";break;
+//		case 17:		cout << "I hear you just had a birthday and you are " << age << " years old.\n Next year you will be able to vote.\n";break;
+//		case 18 ... 70:	cout << "I hear you just had a birthday and you are " << age << " years old.\n";break;
+//		case 71 ... 109:cout << "I hear you just had a birthday and you are " << age << " years old.\n I hope you are enjoying retirement\n";break;
 //	}	
-//else if(age == 17)
-//	{
-//		cout <<"Next year you will be able to vote.\n";
-//	}
-//else if(age > 70)
-//	{
-//		cout <<"I hope you are enjoying retirement\n";
-//	}
+
+if(age <12)
+	{		
+		cout <<"Next year you will be "<< age+1<<"\n";
+	}	
+else if(age == 17)
+	{
+		cout <<"Next year you will be able to vote.\n";
+	}
+else if(age > 70)
+	{
+		cout <<"I hope you are enjoying retirement\n";
+	}
 
 cout <<"Yours sincerely \n \n";
 cout <<"Miklós\n";
